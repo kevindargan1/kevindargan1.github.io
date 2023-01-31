@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<!-- need to add pop up notification when entry submitted-->
+<!-- need to add prompt "do you want to submit another request?"-->
+
+<head>
+    <html lang='en'>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href='plex_requests.css'>
+</head>
+
+<header>
+    <img id="logo"
+        src="https://external-preview.redd.it/9XrGQ8CSKnKgFLheFEyrJ3mhlVsD6pJVHfdv_wewo7w.png?auto=webp&s=0d2742069c1df38e2024b9e3914606d93255ba83">
+    <h1>PlexKev Requests</h1>
+    <nav>
+        <ul>
+            <li><a href="#student-info">INFO</a></li>
+            <li><a href="#html-questions">HTML</a></li>
+            <li><a href="#css-questions">CSS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<fieldset> <legend>Request Information</legend>
+<form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbzFpzgS5kFKZVcuu4pOWJpX5RMEtn0TpnCDt7HU2XFVkuQak7Ntid2xxIQm5RauNd9Mhw/exec">
+
+<div class="info">
+  <label>Your Name: </label>
+  <input name="name" type="text" placeholder="Name" required>
+  <br>
+</div>
+
+<div class="info">
+<label>Name of Show/Movie: </label>
+  <input name="show_movie" type="text" placeholder="Show or Movie" required>
+  <br>
+</div>
+
+<div class="info">
+<label>Release Year: </label> 
+  <input name="releaseyear" type="number" placeholder="Release Year" required>
+  <br>
+</div>
+
+<div class="radio">
+<legend class="showormovie">Is this a show or movie: </legend> 
+  <input class="radio" name="showormovie" type="radio" value="tv" required> <label>TV Show</label>
+  <br>
+  <input class="radio" name="showormovie" type="radio" value="movie" required> <label>Movie</label>
+  <br>
+</div>
+
+<div class="info">
+<label>Comments: </label>
+  <textarea name="comments" type="text" placeholder="Comments..." required></textarea> 
+  <br>
+</div>
+
+
+  <button class="button" type="submit">Send</button>
+</form>
+</html>
+
+<!---
+<body>
+    <fieldset>
+        <legend>Plex Requests</legend>
+        <form name='plex_requests' method="post"
+            action="https://script.google.com/macros/s/AKfycbzFpzgS5kFKZVcuu4pOWJpX5RMEtn0TpnCDt7HU2XFVkuQak7Ntid2xxIQm5RauNd9Mhw/exec">
+            <p>
+                <label for="name">Your Name: </label>
+                <input required type="text" name="name" id='name' placeholder="Type Name">
+            </p>
+            <p>
+                <label for="name">Show/Movie: </label>
+                <input required id="'show_movie" type="text" name="show_movie" placeholder="Type Name of Show/Movie">
+            </p>
+            <p>
+                <label for="releaseyear">Release Year: </label>
+                <input required id='releaseyear' type="number" name="releaseyear" placeholder="Release Year">
+            </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Is this a TV show or Movie?</legend>
+        <div>
+            <input required type="radio" name="showormovie" value="tv">TV
+            <input required type="radio" name="showormovie" value="mov">Movie
+        </div>
+    </fieldset>
+    <br>
+    <legend>
+        Comments:
+    </legend>
+    <textarea name="comments" rows='5' placeholder="I don't actually care about your comments..."></textarea>
+    <p>
+        <input type="submit" name="Submit" id="Submit" value="Submit">
+    </p>
+    </form>
+</body>
+</div>
+</body>
+
+</html>
+
+-->
