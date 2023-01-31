@@ -100,13 +100,24 @@ legend{
 button {
     display: block;
     margin: 4px auto;
-    width: 40%;
-    padding: 10px;
-    font-size: 12px;
+    width: 20%;
+    padding: px;
+    font-size: 20px;
     background: #d0d0d5;
     border: 3px solid #3b3b4f;
   }
 
   textarea{
     width: 40%;
+  }
+
+  button:active{
+    color: blue;
+    border:3px solid blue;
+  }
+
+  @media (max-width:720px){
+    h1{
+        font-size:20px
+    }
   }
